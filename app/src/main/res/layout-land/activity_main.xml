@@ -16,24 +16,19 @@
             android:layout_height="match_parent"
             android:id="@+id/mainRel">
 
-            <com.google.android.material.navigation.NavigationView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:id="@+id/navigationView"
-                android:visibility="gone"/>
-
             <ImageView
-                android:id="@+id/image_header"
+                android:scaleType="fitXY"
                 android:layout_width="match_parent"
                 android:layout_height="590dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/image_header" />
+                android:src="@drawable/image_header"
+                android:id="@+id/image_header"
+                />
 
             <ImageView
                 android:scaleType="fitXY"
                 android:id="@+id/image_transform"
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
+                android:layout_height="390dp"
                 android:layout_below="@+id/image_header"
                 android:layout_marginTop="0dp"
                 android:src="@drawable/image_transform" />
@@ -82,12 +77,10 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="151dp"
                 android:text="WE ARE CREATIVES"
-                android:textSize="45sp"
+                android:textSize="50sp"
                 android:gravity="center_horizontal"
                 android:id="@+id/we_are_creative"
                 android:textColor="@color/white"
-                android:fontFamily="@font/fraunces_variable_font"
-                android:textFontWeight="700"
                 />
 
             <TextView
@@ -100,7 +93,6 @@
                 android:textSize="32dp"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/transform_your_brand"
-                android:fontFamily="@font/fraunces_variable_font"
                 />
 
             <TextView
@@ -110,11 +102,10 @@
                 android:text="@string/we_are"
                 android:layout_marginTop="34dp"
                 android:gravity="center_horizontal"
-                android:textSize="20sp"
+                android:textSize="18sp"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/we_are"
-                android:layout_marginRight="43dp"
-                android:fontFamily="@font/barlow_regular"
+                android:layout_marginRight="25dp"
                 />
 
 
@@ -144,9 +135,7 @@
                 android:gravity="center_horizontal"
                 android:text="@string/stand"
                 android:textColor="@color/dark_blue"
-                android:id="@+id/stand"
-                android:fontFamily="@font/fraunces_variable_font"
-                android:textSize="32sp"/>
+                android:id="@+id/stand"/>
 
             <TextView
                 android:layout_width="307dp"
@@ -157,9 +146,7 @@
                 android:gravity="center_horizontal"
                 android:textColor="@color/dark_blue"
                 android:layout_marginTop="35dp"
-                android:id="@+id/using"
-                android:textSize="20sp"
-                android:fontFamily="@font/barlow_regular"/>
+                android:id="@+id/using"/>
 
             <ImageView
                 android:scaleType="fitXY"
@@ -170,7 +157,7 @@
                 android:id="@+id/image_graphic_design"/>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="220dp"
                 android:layout_height="wrap_content"
                 android:text="Graphic Design"
                 android:layout_below="@id/white_space2"
@@ -178,8 +165,6 @@
                 android:layout_marginTop="404dp"
                 android:gravity="center_horizontal"
                 android:id="@+id/graphic_design"
-                android:textSize="32sp"
-                android:fontFamily="@font/fraunces_variable_font"
                 />
 
             <TextView
@@ -191,31 +176,26 @@
                 android:gravity="center_horizontal"
                 android:layout_centerHorizontal="true"
                 android:id="@+id/great"
-                android:fontFamily="@font/barlow_regular"
-                android:textSize="20sp"
                 />
 
             <ImageView
-                android:id="@+id/image_photography"
+                android:scaleType="fitXY"
                 android:layout_width="match_parent"
                 android:layout_height="650dp"
+                android:src="@drawable/image_photography"
                 android:layout_below="@+id/image_graphic_design"
-                android:layout_marginTop="3dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/image_photography" />
+                android:id="@+id/image_photography"/>
 
             <TextView
-
-                android:layout_width="match_parent"
+                
+                android:layout_width="194dp"
                 android:layout_height="wrap_content"
                 android:text="Photography"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:layout_below="@id/image_graphic_design"
                 android:layout_marginTop="397dp"
-                android:id="@+id/photography"
-                android:textSize="32sp"
-                android:fontFamily="@font/fraunces_variable_font"/>
+                android:id="@+id/photography"/>
 
             <TextView
                 android:layout_width="310dp"
@@ -225,21 +205,18 @@
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="30dp"
-                android:id="@+id/increase"
-                android:fontFamily="@font/barlow_regular"
-                android:textSize="20sp"
-                />
+                android:id="@+id/increase"/>
 
             <ImageView
                 android:scaleType="fitXY"
                 android:layout_width="match_parent"
-                android:layout_height="1800dp"
+                android:layout_height="1400dp"
                 android:background="@color/white"
                 android:id="@+id/white_space3"
                 android:layout_below="@id/image_photography"/>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="281dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@id/image_photography"
@@ -247,8 +224,6 @@
                 android:text="CLIENT TESTIMONIALS"
                 android:layout_marginTop="62dp"
                 android:id="@+id/client"
-                android:textSize="24sp"
-                android:fontFamily="@font/fraunces_variable_font"
                 />
 
             <com.google.android.material.imageview.ShapeableImageView
@@ -270,33 +245,27 @@
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="40dp"
                 android:gravity="center_horizontal"
-                android:id="@+id/we_put"
-                android:fontFamily="@font/barlow_regular"
-                android:textSize="22sp"/>
+                android:id="@+id/we_put"/>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="74dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_below="@+id/we_put"
                 android:gravity="center_horizontal"
                 android:text="Emily R."
                 android:id="@+id/emily_r"
-                android:layout_marginTop="43dp"
-                android:fontFamily="@font/fraunces_variable_font"
-                android:textSize="26sp"/>
+                android:layout_marginTop="43dp"/>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="113dp"
                 android:layout_height="wrap_content"
                 android:text="Marketing Director"
                 android:layout_below="@+id/emily_r"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="17dp"
-                android:id="@+id/marketing"
-                android:fontFamily="@font/barlow_thin"
-                android:textSize="20sp"/>
+                android:id="@+id/marketing"/>
             
             <com.google.android.material.imageview.ShapeableImageView
                 android:layout_width="wrap_content"
@@ -315,12 +284,10 @@
                 android:layout_below="@id/thomas"
                 android:id="@+id/sunnyside"
                 android:layout_marginTop="38dp"
-                android:gravity="center_horizontal"
-                android:fontFamily="@font/barlow_regular"
-                android:textSize="22sp"/>
+                android:gravity="center_horizontal"/>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="74dp"
                 android:layout_height="wrap_content"
                 android:text="Thomas S."
                 android:textStyle="bold"
@@ -329,12 +296,10 @@
                 android:id="@+id/thomas_s"
                 android:gravity="center_horizontal"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="@font/fraunces_variable_font"
-                android:textSize="26sp"
                 />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="113dp"
                 android:layout_height="wrap_content"
                 android:text="Chief Operating Officer"
                 android:layout_below="@+id/thomas_s"
@@ -342,8 +307,6 @@
                 android:id="@+id/coo"
                 android:gravity="center_horizontal"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="@font/barlow_thin"
-                android:textSize="20sp"
                 />
 
             <ImageView
@@ -365,24 +328,20 @@
                 android:id="@+id/incredible"
                 android:gravity="center_horizontal"
                 android:layout_centerHorizontal="true"
-                android:fontFamily="@font/barlow_regular"
-                android:textSize="22sp"
                 />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="74dp"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
                 android:text="Jennie F."
                 android:textStyle="bold"
                 android:layout_below="@id/incredible"
-                android:id="@+id/jennie_f"
-                android:fontFamily="@font/fraunces_variable_font"
-                android:textSize="26sp"/>
+                android:id="@+id/jennie_f" />
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="113dp"
                 android:layout_height="wrap_content"
                 android:text="Businness Owner"
                 android:id="@+id/owner"
@@ -390,8 +349,6 @@
                 android:layout_marginTop="17dp"
                 android:layout_centerHorizontal="true"
                 android:gravity="center_horizontal"
-                android:fontFamily="@font/barlow_thin"
-                android:textSize="22sp"
                 />
 
             <LinearLayout
@@ -402,7 +359,6 @@
                 android:id="@+id/linear1">
 
                 <ImageView
-
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:src="@drawable/image_gallery_milkbottles"
@@ -411,7 +367,6 @@
                     />
 
                 <ImageView
-
                     android:layout_width="200dp"
                     android:layout_height="200dp"
                     android:src="@drawable/image_gallery_orange"
@@ -513,14 +468,13 @@
                     android:layout_centerHorizontal="true"
                     android:layout_below="@+id/linear3"
                     android:id="@+id/linear4"
-                    android:gravity="center_horizontal"
                     >
 
                     <ImageButton
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:src="@drawable/icon_facebook"
-
+                        android:layout_marginStart="93dp"
                         android:background="@color/dark_moderate_cyan"
                         android:id="@+id/facebook"
                         />
