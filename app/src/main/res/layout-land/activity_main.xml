@@ -19,24 +19,66 @@
             <ImageView
                 android:scaleType="fitXY"
                 android:layout_width="match_parent"
-                android:layout_height="590dp"
-                android:src="@drawable/image_header"
+                android:layout_height="367dp"
+                android:src="@drawable/image_header_desktop"
                 android:id="@+id/image_header"
                 />
 
-            <ImageView
-                android:scaleType="fitXY"
-                android:id="@+id/image_transform"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="390dp"
-                android:layout_below="@+id/image_header"
-                android:layout_marginTop="0dp"
-                android:src="@drawable/image_transform" />
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/image_header"
+                android:id="@+id/linearDesktop">
+
+                <ImageView
+                    android:scaleType="fitXY"
+                    android:id="@+id/image_transform"
+                    android:layout_width="400dp"
+                    android:layout_height="390dp"
+                    android:layout_below="@+id/image_header"
+                    android:layout_marginTop="0dp"
+                    android:src="@drawable/image_transform_desktop" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="70dp"
+                        android:text="Transform your brand"
+                        android:gravity="center_horizontal"
+                        android:textSize="32dp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/transform_your_brand"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/transform_your_brand"
+                        android:text="@string/we_are"
+                        android:layout_marginTop="34dp"
+                        android:gravity="center_horizontal"
+                        android:textSize="18sp"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/we_are"
+                        android:layout_marginRight="25dp"
+                        />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="436dp"
-                android:layout_below="@+id/image_transform"
+                android:layout_below="@+id/linearDesktop"
                 android:background="@color/white"
                 android:id="@+id/white_space1"/>
 
@@ -53,14 +95,39 @@
 
 
 
-            <ImageView
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/icon_hamburger"
+                android:orientation="horizontal"
+                android:gravity="end"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="37dp"
-                android:layout_marginRight="24dp"
-                android:id="@+id/icon_hamburger"/>
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="44dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Service"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Projects"/>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CONTACT"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"/>
+
+            </LinearLayout>
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -72,7 +139,7 @@
                 android:id="@+id/icon_arrow_down"/>
 
             <TextView
-                android:layout_width="306dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="151dp"
@@ -83,30 +150,9 @@
                 android:textColor="@color/white"
                 />
 
-            <TextView
-                android:layout_width="270dp"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/image_transform"
-                android:layout_marginTop="70dp"
-                android:text="Transform your brand"
-                android:gravity="center_horizontal"
-                android:textSize="32dp"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/transform_your_brand"
-                />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/transform_your_brand"
-                android:text="@string/we_are"
-                android:layout_marginTop="34dp"
-                android:gravity="center_horizontal"
-                android:textSize="18sp"
-                android:layout_centerHorizontal="true"
-                android:id="@+id/we_are"
-                android:layout_marginRight="25dp"
-                />
+
+
 
 
 
